@@ -9,11 +9,11 @@
             <clobbers target="JavaThread" />
         </js-module>
         <platform name="android">
-            <config-file target="config.xml" parent="/*">
+            <config-file target="res/xml/config.xml" parent="/*">
                 <feature name="JavaThread">
                     <param name="android-package" value="za.co.hellotech.JavaThread"/>
                 </feature>
             </config-file>            
-            <source-file src="src/android/JavaThread.java" target-dir="src/com/qmart/SalesmanApp"/>
+            <source-file src="src/android/JavaThread.java" target-dir="src/za/co/hellotech/JavaThread"/>
         </platform>
     </plugin>
