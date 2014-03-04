@@ -27,7 +27,7 @@ cordova.exec(
      alert("Started java thread");
     },
     function(error) {
-    	alert("Failed to start thread");
+    	alert("Failed to start thread:"+error.msg);
     },
     "JavaThread",
     "action",
