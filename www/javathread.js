@@ -18,7 +18,10 @@
  * under the License.
  *
 */
-alert('launching thread');
+
+var cordova = require('cordova'),
+exec = require('cordova/exec');
+
 cordova.exec(
     function onSuccess() {
      alert("Started java thread");
