@@ -1,0 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="za.co.hellotech.JavaThread" version="0.1.0">
+        <name>JavaThread</name>
+        <description>Cordova Java Thread</description>
+        <license>Apache 2.0</license>
+        <keywords>cordova,javathread</keywords>
+        <js-module src="www/javathread.js" name="JavaThread">
+            <clobbers target="JavaThread" />
+        </js-module>
+        <platform name="android">
+            <config-file target="config.xml" parent="/*">
+                <feature name="JavaThread">
+                    <param name="android-package" value="za.co.hellotech.JavaThread"/>
+                </feature>
+            </config-file>            
+            <source-file src="src/android/JavaThread.java" target-dir="src/com/qmart/SalesmanApp"/>
+        </platform>
+    </plugin>
